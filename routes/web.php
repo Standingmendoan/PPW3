@@ -26,3 +26,9 @@ Route::post('/uploadimage', [ImageController::class, 'uploadImage'])->name('uplo
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/upload', [ImageController::class, 'showUploadForm'])->name('upload.form');
+Route::post('/upload', [ImageController::class, 'uploadImage'])->name('upload.image');
+
+Route::get('/uploadimage', [ImageController::class, 'showUploadForm'])->name('upload.form');
+

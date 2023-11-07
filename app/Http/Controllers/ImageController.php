@@ -41,7 +41,7 @@ class ImageController extends Controller
             // Save original image
             $image->move(public_path('images'), $filename);
 
-            return redirect()->back()->with('success', 'Image has been uploaded successfully.');
+            return redirect('home')->with('success', 'Image has been uploaded successfully.');
         }
 
         return redirect()->back()->with('error', 'No image was uploaded.');
