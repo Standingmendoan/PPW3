@@ -19,7 +19,7 @@
     <p>No photo found</p>
 @endif
 
-            <a href="{{ route('upload.form') }}" class="btn btn-primary mt-3">dd Photo</a>
+            <a href="{{ route('upload.form') }}" class="btn btn-primary mt-3">Add Photo</a>
         </div>
     </div>
 </body>
